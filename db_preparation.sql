@@ -33,7 +33,7 @@ create table public.users(
 
 select * from public.users_cntl
 
-select * from public.users_stage
+select count(*) from public.users_stage
 
 select * from public.users
 
