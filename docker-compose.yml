@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:11.16
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+    volumes:
+      - ./db_preparation.sql:/docker-entrypoint-initdb.d/db_preparation.sql
+  www:
+    image: nginx
+    ports:
+      - 8080:80
+    volumes:
+      - ./data:/usr/share/nginx/html
