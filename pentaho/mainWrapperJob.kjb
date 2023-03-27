@@ -18,8 +18,8 @@
     <access>Native</access>
     <database>postgres</database>
     <port>5432</port>
-    <username/>
-    <password>Encrypted </password>
+    <username>postgres</username>
+    <password>postgres</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
